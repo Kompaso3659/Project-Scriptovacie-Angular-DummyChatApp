@@ -1,0 +1,26 @@
+<div class="background">
+  <h3>Login</h3>
+  <form (submit)="login(firstName.value, lastName.value)" class="form-signin">
+    <label for="firstName" class="sr-only">First Name</label>
+    <input
+      name="firstName"
+      #firstName
+      id="firstName"
+      type="text"
+      placeholder="Your first name..."
+      class="form-control"
+      required autofocus
+    />
+    <label for="lastName" class="sr-only">Last Name</label>
+    <input
+      name="lastName"
+      #lastName
+      id="lastName"
+      type="text"
+      placeholder="Your last name..."
+      class="form-control"
+      required
+    />
+    <button class="btn btn-lg btn-primary btn-block" type="submit">Login</button>
+  </form>
+</div>
